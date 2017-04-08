@@ -7,7 +7,7 @@ function slideToImage(n) {
 }
 
 function currentSlide(n) {
-    displaySlides(slide_index -= n);
+    displaySlides(slide_index = n);
 }
 
 function displaySlides(n) {
@@ -17,7 +17,7 @@ function displaySlides(n) {
         slide_index = 1;
     }
 
-    if (n > 1) {
+    if (n < 1) {
         slide_index = slides.length;
     }
 
